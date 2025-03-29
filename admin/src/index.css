@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-primary {
+    background-color: #0077b6;
+  }
+  .bg-secondary {
+    background-color: #0096c7;
+  }
+  .bg-accent {
+    background-color: #ff9f1c;
+  }
+  .bg-background {
+    background-color: #e0fbfc;
+  }
+  .bg-primary-80 {
+    background-color: rgba(0, 119, 182, 0.8);
+  }
+
+  .text-primary {
+    color: #0077b6;
+  }
+  .text-secondary {
+    color: #0096c7;
+  }
+
+  .border-primary {
+    color: #0077b6;
+  }
+  .border-secondary {
+    color: #0096c7;
+  }
+
+  .hover\:bg-primary:hover {
+    @apply bg-[#0077B6];
+  }
+
+  .group:hover .group-hover\:bg-primary {
+    background-color: #0077b6;
+  }
+}
+
+* {
+  font-family: outfit;
+}
+
+.active hr {
+  @apply block;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+@media (max-width: 740px) {
+  .active p {
+    @apply text-white bg-[#0096C7];
+  }
+}
+
+
+@media (hover: none) {
+  button:hover {
+    background-color:  #0077b6 !important;
+    color:  white !important;
+  }
+}

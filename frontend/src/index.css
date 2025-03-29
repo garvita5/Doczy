@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+    .bg-primary { background-color: #0077B6; }  
+    .bg-secondary { background-color: #0096C7; }
+    .bg-accent { background-color: #FF9F1C; }
+    .bg-background { background-color: #E0FBFC; }
+
+    .text-primary { color: #0077B6; }  
+    .text-secondary { color: #0096C7; }
+
+    .border-primary { color: #0077B6; }  
+    .border-secondary { color: #0096C7; }
+
+    .hover\:bg-primary:hover { @apply bg-[#0077B6]; }
+  }
+  
+  *{
+    font-family: outfit;
+  }
+
+.active hr{
+    @apply block
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+@media(max-width:740px){
+  .active p{
+    @apply text-white bg-[#0096C7]
+  }
+}
+
+@media (hover: none) {
+  button:hover {
+    background-color:  #0077b6 !important;
+    color:  white !important;
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Logo with Another Updated Font -->
+    <g transform="translate(50, 40)">
+        <!-- Modern Shield Icon with Cross -->
+        <path d="M30,0 L55,15 Q50,50 30,65 Q10,50 5,15 L30,0 Z" fill="#0077B6" stroke="white" stroke-width="3"/>
+        <rect x="25" y="20" width="10" height="20" fill="white"/>
+        <rect x="20" y="25" width="20" height="10" fill="white"/>
+        
+        <!-- Adjusted Text Position with New Font -->
+        <text x="65" y="55" font-family="Raleway, sans-serif" font-size="50" fill="#000B6D" font-weight="700">Doczy</text>
+    </g>
+</svg>
