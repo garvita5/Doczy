@@ -15,7 +15,13 @@ connectCloudinary();
 
 //middlewares
 app.use(express.json());
-app.use(cors()); // to connect frontend with backend
+app.use(
+  cors({
+    origin: ["https://doczy-admin.onrender.com", "https://doczy.onrender.com"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // If using authentication (cookies, tokens)
+  })
+); // to connect frontend with backend
 
 //api endpoints
 
