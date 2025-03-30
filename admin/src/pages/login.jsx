@@ -63,6 +63,9 @@ const Login = () => {
               type="email"
               required
               className="border border-[#DADADA] rounded w-full p-2 mt-1"
+              placeholder={
+                state === "Admin" ? "admin@doczy.com" : "richard@doczy.com"
+              }
             />
           </div>
 
@@ -74,6 +77,7 @@ const Login = () => {
               type="password"
               required
               className="border border-[#DADADA] rounded w-full p-2 mt-1"
+              placeholder={state === "Admin" ? "admin123" : "richard123"}
             />
           </div>
 
